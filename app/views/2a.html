@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main" tabindex="-1">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="2a.html">
+        <fieldset>
+
+          <legend>
+            <h1 class="heading-xlarge">What is your username and password for service 1</h1>
+          </legend>
+
+          <div class="form-group">
+            <label class="form-label" for="un">Username</label>
+            <input class="form-control" id="un" name="un" type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pw">Password</label>
+            <input class="form-control" id="pw" name="pw" type="text">
+          </div>
+
+        <input class="button" type="submit" value="Submit">
+
+    </div>
+  </div>
+</main>
+{% endblock %}
