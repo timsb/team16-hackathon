@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">{% if serviceName %} {{ serviceName }} {% endif %}</h1>
+
+      <p>This tool will help remind and prepare you for your daily standup.</p>
+
+      <h2 class="heading-large">What you need</h2>
+
+      <ul class="list list-bullet">
+        <li>login details for services that will help you with your standup</li>
+      </uL>
+
+      <p>
+        <a class="button button-start" href="1" role="button">Start now</a>
+      </p>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
