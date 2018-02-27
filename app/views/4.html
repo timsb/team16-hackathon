@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="4.html">
+        <fieldset>
+
+          <legend>
+            <h1 class="heading-xlarge">When is your next standup?</h1>
+          </legend>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="today">
+            <label for="radio-inline-1">Today</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="tomorrow">
+            <label for="radio-inline-2">UR</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-3" type="radio" name="radio-inline-group" value="monday">
+            <label for="radio-inline-3">Monday</label>
+          </div>
+        </fieldset>
+
+        <input class="button" type="submit" value="Continue">
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

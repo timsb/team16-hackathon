@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="3a.html">
+        <fieldset>
+
+          <legend>
+            <h1 class="heading-xlarge">What is your role?</h1>
+          </legend>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="dev">
+            <label for="radio-inline-1">Dev</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="ur">
+            <label for="radio-inline-2">UR</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-3" type="radio" name="radio-inline-group" value="designer">
+            <label for="radio-inline-3">Designer</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-4" type="radio" name="radio-inline-group" value="tester">
+            <label for="radio-inline-4">Tester</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-inline-5" type="radio" name="radio-inline-group" value="etc">
+            <label for="radio-inline-5">Etc</label>
+          </div>
+
+          <div class="multiple-choice" data-target="other">
+            <input id="radio-inline-6" type="radio" name="radio-inline-group" value="other">
+            <label for="radio-inline-6">Other</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="other">
+            <label class="form-label" for="other-text">What is your role?</label>
+            <input class="form-control" name="other-text" type="text" id="other-text">
+          </div>
+        </fieldset>
+        <input class="button" type="submit" value="Continue">
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
