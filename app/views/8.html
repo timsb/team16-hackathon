@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main" tabindex="-1">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Your Daily Scrum update</h1>
+      <section>
+        <h2 class="heading-large">What you did yesterday</h2>
+        <h3 class="heading-small">Jira</h3>
+        <ul class="list">
+          <li>You changed the status to Done on PTC-1856 - View CY-2 balanced 'no employments' and 'SA' summary card and page</a></li>
+          <li>You started progress on PTC-1720 - Tables are not fully accessible</a></li>
+        </ul>
+        <h3 class="heading-small">Github</h3>
+        <ul class="list">
+          <li>New comments on pull request #12 PTC 1741 - Summary cards for balanced and no rec</a>
+            <div class="panel panel-border-narrow"><p class="bold-small">timsb on line 7 of conf/messages: </p>We shouldn't be putting html inside messages. Could you separate them messages out and then pass the html in as an argument.</div>
+            <div class="panel panel-border-narrow"><p class="bold-small">You on line 7 of conf/messages: </p>I have fixed this issue, but be aware there is other HTML within our messages.</div>
+          </li>
+        </ul>
+        <h3 class="heading-small">Calendar</h3>
+        <ul class="list">   
+          <li>Sprint Planning 2:00 PM to 3:00 PM at Orange Show and Tell</li>
+        </ul>
+        <h3 class="heading-small">Email</h3>
+        <ul class="list">
+          <li>User Research session to Paul Welsh</li>
+        </ul>
+        <section>
+          <h2 class="heading-large">What you are doing today</h2>
+          <h3 class="heading-small">Jira</h3>
+          <ul class="list">
+            <li>You have an open ticket: PTC-1720 - Tables are not fully accessible</a></li>
+          </ul>
+          <h3 class="heading-small">Calendar</h3>
+          <ul class="list">   
+            <li>Sprint Retrospective 10:00 AM to 11:00 AM at Orange Show and Tell</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="heading-large">Any blockers</h2>
+          <p class="text">You have no blockers.</p>
+        </section>
+        <section>
+         <form action="7.html">
+          <fieldset class="form-group">
+           <label class="heading-large" for="textarea">Anything else</label>
+           <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5" placeholder="Text box"></textarea>
+         </fieldset>
+         <input class="button" type="submit" value="Continue">
+       </form>
+     </section>
+
+   </div>
+ </div>
+</main>
+{% endblock %}
