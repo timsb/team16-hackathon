@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main" tabindex="-1">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="1a.html">
+        <fieldset>
+
+          <legend>
+            <h1 class="heading-xlarge">Sign in</h1>
+          </legend>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pw">Password</label>
+            <input class="form-control" id="pw" name="pw" type="text">
+          </div>
+        </fieldset>
+
+        <input class="button" type="submit" value="Sign in">
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
